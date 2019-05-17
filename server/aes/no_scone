@@ -1,0 +1,9 @@
+FROM python
+
+RUN pip install pycrypto
+RUN mkdir /test
+
+COPY server.py /test
+
+CMD python /test/server.py
+

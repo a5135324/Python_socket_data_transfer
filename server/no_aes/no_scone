@@ -1,0 +1,8 @@
+FROM python
+
+RUN mkdir /test
+
+COPY server.py /test
+
+CMD python /test/server.py
+
